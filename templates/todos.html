@@ -24,4 +24,14 @@
     {% endfor %}
 </ul>
 
-{% endif %} {% endblock %}
+{% endif %}
+
+<hr/>
+
+<h2>Completed</h2>
+<ul>
+    {% for task in completed_tasks %}
+    <li>{{task.name}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
